@@ -79,7 +79,7 @@ public class Player : MonoBehaviour
 
     private void CheckForLedge()
     {
-        if (ledgeDetected && canGrabLedge && Input.GetButton("Jump"))
+        if (ledgeDetected && canGrabLedge && Input.GetKeyDown(KeyCode.E))
         {
             canGrabLedge = false;
 
